@@ -13,3 +13,7 @@
 * npm install -g @angular/cli
 ## DOTNET (6.0.302) SDK
 ``` https://dotnet.microsoft.com/en-us/download/dotnet/6.0 ```
+
+# App runnning instructions
+
+* ng serve / npm run start
