@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-training-app';
+  pageName='APP 21'
+  changePageName(){
+    this.pageName ='Test in compoent ts'
+  }
 }

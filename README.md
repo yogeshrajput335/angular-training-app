@@ -17,3 +17,6 @@
 # App runnning instructions
 
 * ng serve / npm run start
+
+# INPUT/OUTPUT Ref
+* https://angular.io/guide/inputs-outputs
