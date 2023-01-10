@@ -1,2 +1,6 @@
-<app-my-head></app-my-head>
-<my-body></my-body>
+{{pageName}}
+<input type="text" [value]="pageName" >
+<input type="button" value="Chnage Name" (click)="changePageName()">
+<input type="text" value="pageName">
+<app-my-head [inputData]="pageName"></app-my-head>
+<my-body [inputData]="pageName"></my-body>

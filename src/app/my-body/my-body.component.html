@@ -1,1 +1,5 @@
-<div style="width:100;height:500px;background-color:green"><app-my-left></app-my-left></div>
+<div style="width:100;height:500px;background-color:green">
+  {{inputData}}
+  <app-my-left [inputData]="inputData" (newItemEvent)="addItem($event)"></app-my-left>
+  <h2>New Data : {{newData}}</h2>
+</div>
