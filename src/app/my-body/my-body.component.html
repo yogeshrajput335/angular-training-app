@@ -1,5 +1,7 @@
 <div style="width:100;height:500px;background-color:green">
   {{inputData}}
   <app-my-left [inputData]="inputData" (newItemEvent)="addItem($event)"></app-my-left>
-  <h2>New Data : {{newData}}</h2>
+  <h2 class="special" *appNot="false">New Data : {{newData}}</h2>
+  <div *ngIf="i==2" [ngStyle]="{'font-size': '25px'}">New Data for NGIF</div>
+  <div *ngFor="let item of listDetail" [ngClass]="item%2==0 ? 'special' : ''">{{item}}</div>
 </div>
