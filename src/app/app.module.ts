@@ -8,6 +8,8 @@ import { MyBodyComponent } from './my-body/my-body.component';
 import { MyHeadComponent } from './my-head/my-head.component';
 import { MyLeftComponent } from './my-left/my-left.component';
 import { MyRightComponent } from './my-right/my-right.component';
+import { MyPipeComponent } from './my-pipe/my-pipe.component';
+import { ExponentialStrengthPipe } from './common/exponential-strength.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MyRightComponent } from './my-right/my-right.component';
     MyBodyComponent,
     MyLeftComponent,
     MyRightComponent,
-    AppNotDirective
+    AppNotDirective,
+    MyPipeComponent,
+    ExponentialStrengthPipe
   ],
   imports: [
     BrowserModule,

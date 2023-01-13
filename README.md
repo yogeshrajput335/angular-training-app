@@ -20,3 +20,6 @@
 
 # INPUT/OUTPUT Ref
 * https://angular.io/guide/inputs-outputs
+
+# PIPE
+* https://angular.io/api/common/DatePipe
