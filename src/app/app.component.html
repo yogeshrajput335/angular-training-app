@@ -1,6 +1,6 @@
-{{pageName}}
-<input type="text" [value]="pageName" >
-<input type="button" value="Chnage Name" (click)="changePageName()">
-<input type="text" value="pageName">
-<app-my-head [inputData]="pageName"></app-my-head>
-<my-body [inputData]="pageName"></my-body>
+<ul>
+  <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+  <li><a routerLink="/user" routerLinkActive="active">User</a></li>
+  <li><a routerLink="/learn" routerLinkActive="active">Learn</a></li>
+</ul>
+<router-outlet></router-outlet>
