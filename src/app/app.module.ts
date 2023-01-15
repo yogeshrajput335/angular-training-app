@@ -13,6 +13,7 @@ import { ExponentialStrengthPipe } from './common/exponential-strength.pipe';
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { MyUsersComponent } from './my-users/my-users.component';
 import { MyLearnComponent } from './my-learn/my-learn.component';
+import { MyAboutComponent } from './my-about/my-about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MyLearnComponent } from './my-learn/my-learn.component';
     ExponentialStrengthPipe,
     MyDashboardComponent,
     MyUsersComponent,
-    MyLearnComponent
+    MyLearnComponent,
+    MyAboutComponent
   ],
   imports: [
     BrowserModule,
