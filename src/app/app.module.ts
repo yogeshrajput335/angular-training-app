@@ -15,6 +15,8 @@ import { MyUsersComponent } from './my-users/my-users.component';
 import { MyLearnComponent } from './my-learn/my-learn.component';
 import { MyAboutComponent } from './my-about/my-about.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
+import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.com
     MyUsersComponent,
     MyLearnComponent,
     MyAboutComponent,
-    MyObserPromiseComponent
+    MyObserPromiseComponent,
+    MyHttpRequestEmpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
