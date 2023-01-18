@@ -17,6 +17,7 @@ import { MyAboutComponent } from './my-about/my-about.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ConfigService } from './services/config.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

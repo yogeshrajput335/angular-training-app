@@ -1,3 +1,4 @@
+import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyLearnComponent } from './my-learn/my-learn.component';
 import { MyUsersComponent } from './my-users/my-users.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'about', component: MyAboutComponent },
   { path: 'ober-pro', component: MyObserPromiseComponent },
+  { path: 'http-req', component: MyHttpRequestEmpComponent },
 
 
 ];

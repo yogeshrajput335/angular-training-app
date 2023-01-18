@@ -1,1 +1,18 @@
-<p>my-http-request-emp works!</p>
+<!-- {{pagedata|json}} -->
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Phone</td>
+    <td>Birthday</td>
+    <td>Gender</td>
+  </tr>
+  <tr *ngFor="let e of pagedata.data">
+    <td>{{e.firstname+ ' ' +e.lastname}}</td>
+    <td>{{e.email}}</td>
+    <td>{{e.phone}}</td>
+    <td>{{e.birthday |date:'short'}}</td>
+    <td>{{e.gender}}</td>
+  </tr>
+</table>
