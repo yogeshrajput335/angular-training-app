@@ -14,6 +14,7 @@ import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { MyUsersComponent } from './my-users/my-users.component';
 import { MyLearnComponent } from './my-learn/my-learn.component';
 import { MyAboutComponent } from './my-about/my-about.component';
+import { MyEmployeeComponent } from './my-employee/my-employee.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MyAboutComponent } from './my-about/my-about.component';
     MyDashboardComponent,
     MyUsersComponent,
     MyLearnComponent,
-    MyAboutComponent
+    MyAboutComponent,
+    MyEmployeeComponent
   ],
   imports: [
     BrowserModule,

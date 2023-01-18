@@ -4,6 +4,7 @@ import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MyAboutComponent } from './my-about/my-about.component';
+import { MyEmployeeComponent } from './my-employee/my-employee.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: MyDashboardComponent },
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'learn', component: MyLearnComponent },
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'about', component: MyAboutComponent },
-
+  {path: 'employee',component:MyEmployeeComponent},
 ];
 
 @NgModule({
