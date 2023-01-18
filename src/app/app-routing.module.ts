@@ -1,3 +1,4 @@
+import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyLearnComponent } from './my-learn/my-learn.component';
 import { MyUsersComponent } from './my-users/my-users.component';
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'learn', component: MyLearnComponent },
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'about', component: MyAboutComponent },
-  {path: 'employee',component:MyEmployeeComponent},
+  { path: 'employee', component: MyEmployeeComponent },
+  { path: 'ober-pro', component: MyObserPromiseComponent },
 ];
 
 @NgModule({
