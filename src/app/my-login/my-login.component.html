@@ -17,4 +17,33 @@
         </table>
     </form>
 </div>
-{{display|json}}
+<div>
+    <form [formGroup]="form"(ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <td>UserId</td>
+                <td><input type="text" formControlName="UserId"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Id</td>
+                <td><input type="text" formControlName="Id"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Title</td>
+                <td><input type="text" formControlName="Title"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Completed</td>
+                <td><input type="text" formControlName="Completed"></td>
+            </tr>
+        </table>
+
+
+    </form>
+</div>

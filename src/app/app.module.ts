@@ -25,6 +25,7 @@ import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 import { MyLoginComponent } from './my-login/my-login.component';
+import { loginService } from './services/login.service';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { MyLoginComponent } from './my-login/my-login.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [ConfigService,DataAPIService,studentService],
+  providers: [ConfigService,DataAPIService,studentService,loginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
