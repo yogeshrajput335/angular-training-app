@@ -1,3 +1,5 @@
+import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
+import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyLearnComponent } from './my-learn/my-learn.component';
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'employee', component: MyEmployeeComponent },
   { path: 'ober-pro', component: MyObserPromiseComponent },
   { path: 'http-req', component: MyHttpRequestEmpComponent },
+  { path: 'modal-form', component: MyModalFormComponent },
+  { path: 'reactive-form', component: MyReactiveFormComponent },
 ];
 
 @NgModule({

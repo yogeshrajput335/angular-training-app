@@ -19,6 +19,9 @@ import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.com
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfigService } from './services/config.service';
+import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -36,12 +39,16 @@ import { ConfigService } from './services/config.service';
     MyAboutComponent,
     MyEmployeeComponent,
     MyObserPromiseComponent,
-    MyHttpRequestEmpComponent
+    MyHttpRequestEmpComponent,
+    MyModalFormComponent,
+    MyReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent]
