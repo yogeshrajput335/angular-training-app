@@ -18,9 +18,7 @@ form = new FormGroup({
   "Title":new FormControl(),
   "Completed":new FormControl(),
 });
-onSubmit(){
-  this.display=this.form.value;
-}
+
   constructor(private ls:loginService) { }
 
   ngOnInit(): void {
@@ -28,5 +26,7 @@ onSubmit(){
       this.pageData4=data;
     })
   }
-  
+  onSubmit(){
+    this.display=this.form.value;
+  }
 }
