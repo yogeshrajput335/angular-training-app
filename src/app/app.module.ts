@@ -18,7 +18,9 @@ import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConfigService } from './services/config.service';
+import { ConfigService, DataAPIService } from './services/config.service';
+import { MyStudentComponent } from './my-student/my-student.component';
+import { studentService } from './services/student.service';
 import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
@@ -41,7 +43,8 @@ import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.com
     MyObserPromiseComponent,
     MyHttpRequestEmpComponent,
     MyModalFormComponent,
-    MyReactiveFormComponent
+    MyReactiveFormComponent,
+    MyStudentComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,7 @@ import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.com
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [ConfigService],
+  providers: [ConfigService,DataAPIService,studentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

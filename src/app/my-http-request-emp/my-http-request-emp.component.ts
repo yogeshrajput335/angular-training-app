@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigService } from '../services/config.service';
+import { ConfigService, DataAPIService } from '../services/config.service';
 
 @Component({
   selector: 'app-my-http-request-emp',
@@ -7,13 +7,23 @@ import { ConfigService } from '../services/config.service';
   styleUrls: ['./my-http-request-emp.component.scss']
 })
 export class MyHttpRequestEmpComponent implements OnInit {
-  pagedata:any
-  constructor(private cs: ConfigService) { }
+  pagedata:any;
+  pagedata2:any;
+  constructor(private cs: ConfigService, private gs:DataAPIService) { }
 
   ngOnInit(): void {
     this.cs.getData().subscribe((data:any)=>{
+      
       this.pagedata = data;
     })
+    
+    this.gs.getDataAPI().subscribe((data:any)=>{
+      this.pagedata2 = data;
+    })
+  }
+  
+      
+    
   }
 
-}
+
