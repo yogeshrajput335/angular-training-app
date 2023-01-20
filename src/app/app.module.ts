@@ -24,6 +24,7 @@ import { studentService } from './services/student.service';
 import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
+import { MyLoginComponent } from './my-login/my-login.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.com
     MyHttpRequestEmpComponent,
     MyModalFormComponent,
     MyReactiveFormComponent,
-    MyStudentComponent
+    MyStudentComponent,
+    MyLoginComponent
   ],
   imports: [
     BrowserModule,

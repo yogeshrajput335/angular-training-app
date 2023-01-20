@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MyAboutComponent } from './my-about/my-about.component';
 import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyStudentComponent } from './my-student/my-student.component';
+import { MyLoginComponent } from './my-login/my-login.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: MyDashboardComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'http-req', component: MyHttpRequestEmpComponent },
   { path: 'modal-form', component: MyModalFormComponent },
   { path: 'reactive-form', component: MyReactiveFormComponent },
+  { path:'login',component:MyLoginComponent},
   { path:'student',component:MyStudentComponent},
 ];
 
