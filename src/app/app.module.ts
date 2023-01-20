@@ -18,7 +18,9 @@ import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConfigService } from './services/config.service';
+import { ConfigService, DataAPIService } from './services/config.service';
+import { MyStudentComponent } from './my-student/my-student.component';
+import { studentService } from './services/student.service';
 
 @NgModule({
   declarations: [
@@ -36,14 +38,15 @@ import { ConfigService } from './services/config.service';
     MyAboutComponent,
     MyEmployeeComponent,
     MyObserPromiseComponent,
-    MyHttpRequestEmpComponent
+    MyHttpRequestEmpComponent,
+    MyStudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ConfigService],
+  providers: [ConfigService,DataAPIService,studentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
