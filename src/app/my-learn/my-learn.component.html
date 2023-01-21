@@ -1,7 +1,9 @@
 <h1>Learn</h1><hr>
 {{pageName}}
+{{pageName1}}
 <input type="text" [value]="pageName" >
 <input type="button" value="Chnage Name" (click)="changePageName()">
 <input type="text" value="pageName">
+<input type="text1" value="change myName" (click)="changePageName1()">
 <app-my-head [inputData]="pageName"></app-my-head>
 <my-body [inputData]="pageName"></my-body>
