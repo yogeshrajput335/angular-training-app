@@ -17,8 +17,9 @@ import { MyAboutComponent } from './my-about/my-about.component';
 import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
+import { MyHttpApiMemComponent } from './my-http-api-mem/my-http-api-mem.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConfigService, DataAPIService } from './services/config.service';
+import { ConfigService, MemAPIService,DataAPIService } from './services/config.service';
 import { MyStudentComponent } from './my-student/my-student.component';
 import { studentService } from './services/student.service';
 import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
@@ -26,6 +27,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 import { MyLoginComponent } from './my-login/my-login.component';
 import { loginService } from './services/login.service';
+import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
+
 
 @NgModule({
   declarations: [
@@ -44,10 +47,12 @@ import { loginService } from './services/login.service';
     MyEmployeeComponent,
     MyObserPromiseComponent,
     MyHttpRequestEmpComponent,
+    MyHttpApiMemComponent,
     MyModalFormComponent,
     MyReactiveFormComponent,
     MyStudentComponent,
-    MyLoginComponent
+    MyLoginComponent,
+    ReactiveValidationComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,8 @@ import { loginService } from './services/login.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [ConfigService,DataAPIService,studentService,loginService],
+
+  providers: [ConfigService,DataAPIService,studentService,loginService,MemAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
