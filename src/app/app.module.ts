@@ -19,7 +19,14 @@ import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.com
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
 import { MyHttpApiMemComponent } from './my-http-api-mem/my-http-api-mem.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConfigService, MemAPIService } from './services/config.service';
+import { ConfigService, MemAPIService,DataAPIService } from './services/config.service';
+import { MyStudentComponent } from './my-student/my-student.component';
+import { studentService } from './services/student.service';
+import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
+import { MyLoginComponent } from './my-login/my-login.component';
+import { loginService } from './services/login.service';
 
 
 @NgModule({
@@ -40,13 +47,21 @@ import { ConfigService, MemAPIService } from './services/config.service';
     MyObserPromiseComponent,
     MyHttpRequestEmpComponent,
     MyHttpApiMemComponent,
+    MyModalFormComponent,
+    MyReactiveFormComponent,
+    MyStudentComponent,
+    MyLoginComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [ConfigService,MemAPIService],
+
+  providers: [ConfigService,DataAPIService,studentService,loginService,MemAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

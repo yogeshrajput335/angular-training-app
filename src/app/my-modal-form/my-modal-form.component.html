@@ -1,0 +1,27 @@
+<div>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" [(ngModel)]="userData.name"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" [(ngModel)]="userData.email"></td>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td><input type="text" [(ngModel)]="userData.website"></td>
+    </tr>
+    <tr>
+      <td>Contact Number</td>
+      <td><input type="text" [(ngModel)]="userData.contact"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button (click)="SaveData()"> Save Data</button>
+        <button (click)="PrefillData()"> Prefill Data</button>
+      </td>
+    </tr>
+  </table>
+</div>
+{{SavedData|json}}
