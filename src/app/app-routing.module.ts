@@ -12,6 +12,7 @@ import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyHttpApiMemComponent } from './my-http-api-mem/my-http-api-mem.component';
 import { MyStudentComponent } from './my-student/my-student.component';
 import { MyLoginComponent } from './my-login/my-login.component';
+import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'reactive-form', component: MyReactiveFormComponent },
   { path:'login',component:MyLoginComponent},
   { path:'student',component:MyStudentComponent},
+  { path:'validation',component:ReactiveValidationComponent}
 
 ];
 

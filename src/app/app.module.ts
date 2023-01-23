@@ -27,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 import { MyLoginComponent } from './my-login/my-login.component';
 import { loginService } from './services/login.service';
+import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 
 
 @NgModule({
@@ -51,7 +52,7 @@ import { loginService } from './services/login.service';
     MyReactiveFormComponent,
     MyStudentComponent,
     MyLoginComponent,
-
+    ReactiveValidationComponent
   ],
   imports: [
     BrowserModule,
