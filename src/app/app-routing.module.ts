@@ -11,6 +11,7 @@ import { MyAboutComponent } from './my-about/my-about.component';
 import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyStudentComponent } from './my-student/my-student.component';
 import { MyLoginComponent } from './my-login/my-login.component';
+import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: MyDashboardComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'reactive-form', component: MyReactiveFormComponent },
   { path:'login',component:MyLoginComponent},
   { path:'student',component:MyStudentComponent},
+  { path:'validation',component:ReactiveValidationComponent}
 ];
 
 @NgModule({

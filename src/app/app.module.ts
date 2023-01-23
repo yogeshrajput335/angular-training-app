@@ -26,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 import { MyLoginComponent } from './my-login/my-login.component';
 import { loginService } from './services/login.service';
+import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { loginService } from './services/login.service';
     MyModalFormComponent,
     MyReactiveFormComponent,
     MyStudentComponent,
-    MyLoginComponent
+    MyLoginComponent,
+    ReactiveValidationComponent
   ],
   imports: [
     BrowserModule,
