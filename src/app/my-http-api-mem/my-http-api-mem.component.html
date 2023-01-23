@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <td>member Name</td>
+    <td>Account Number</td>
+    <td>Resi Address</td>
+    <td>Confirmation Date</td>
+    <td>City</td>
+  </tr>
+  <tr *ngFor="let e of pagedata">
+    <td>{{e.membername}}</td>
+    <td>{{e.AccountNumber}}</td>
+    <td>{{e.ResiAddress}}</td>
+    <td>{{e.ConfirmationDate |date:'short'}}</td>
+    <td>{{e.CityR}}</td>
+  </tr>
+</table>

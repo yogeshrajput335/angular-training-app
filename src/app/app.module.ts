@@ -17,8 +17,10 @@ import { MyAboutComponent } from './my-about/my-about.component';
 import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
+import { MyHttpApiMemComponent } from './my-http-api-mem/my-http-api-mem.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConfigService } from './services/config.service';
+import { ConfigService, MemAPIService } from './services/config.service';
+
 
 @NgModule({
   declarations: [
@@ -36,14 +38,15 @@ import { ConfigService } from './services/config.service';
     MyAboutComponent,
     MyEmployeeComponent,
     MyObserPromiseComponent,
-    MyHttpRequestEmpComponent
+    MyHttpRequestEmpComponent,
+    MyHttpApiMemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ConfigService],
+  providers: [ConfigService,MemAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
