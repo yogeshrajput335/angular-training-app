@@ -28,6 +28,8 @@ import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.com
 import { MyLoginComponent } from './my-login/my-login.component';
 import { loginService } from './services/login.service';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
+import { LazyDemoComponent } from './lazy-demo/lazy-demo.component';
+import { PreloadingDemoComponent } from './preloading-demo/preloading-demo.component';
 
 
 @NgModule({
@@ -52,7 +54,7 @@ import { ReactiveValidationComponent } from './reactive-validation/reactive-vali
     MyReactiveFormComponent,
     MyStudentComponent,
     MyLoginComponent,
-    ReactiveValidationComponent
+    ReactiveValidationComponent,
   ],
   imports: [
     BrowserModule,

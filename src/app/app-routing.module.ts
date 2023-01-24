@@ -13,6 +13,7 @@ import { MyHttpApiMemComponent } from './my-http-api-mem/my-http-api-mem.compone
 import { MyStudentComponent } from './my-student/my-student.component';
 import { MyLoginComponent } from './my-login/my-login.component';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
+import { AppCustomPreloader } from './common/custome-preloader';
 
 
 const routes: Routes = [
@@ -29,12 +30,23 @@ const routes: Routes = [
   { path: 'reactive-form', component: MyReactiveFormComponent },
   { path:'login',component:MyLoginComponent},
   { path:'student',component:MyStudentComponent},
-  { path:'validation',component:ReactiveValidationComponent}
-
+  { path:'validation',component:ReactiveValidationComponent},
+  {
+    path: 'lazy-loading',
+    loadChildren: () => import('./lazy-demo/lazy-loading.module')
+    .then(m => m.LazyLoadingRoutingModule)
+ },
+ {
+  path: 'pre-loading',
+  loadChildren: () => import('./preloading-demo/preloading-demo.module')
+  .then(m => m.PreLoadingRoutingModule),
+  data: { preload: true }
+}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes,{ preloadingStrategy: AppCustomPreloader })],
+  exports: [RouterModule],
+  providers: [AppCustomPreloader]
 })
 export class AppRoutingModule { }
