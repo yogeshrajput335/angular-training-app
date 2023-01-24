@@ -17,8 +17,9 @@ import { MyAboutComponent } from './my-about/my-about.component';
 import { MyEmployeeComponent } from './my-employee/my-employee.component';
 import { MyObserPromiseComponent } from './my-obser-promise/my-obser-promise.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
+import { MyHttpApiMemComponent } from './my-http-api-mem/my-http-api-mem.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConfigService, DataAPIService } from './services/config.service';
+import { ConfigService, MemAPIService,DataAPIService } from './services/config.service';
 import { MyStudentComponent } from './my-student/my-student.component';
 import { studentService } from './services/student.service';
 import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
@@ -29,6 +30,7 @@ import { loginService } from './services/login.service';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 import { LazyDemoComponent } from './lazy-demo/lazy-demo.component';
 import { PreloadingDemoComponent } from './preloading-demo/preloading-demo.component';
+
 
 @NgModule({
   declarations: [
@@ -47,6 +49,7 @@ import { PreloadingDemoComponent } from './preloading-demo/preloading-demo.compo
     MyEmployeeComponent,
     MyObserPromiseComponent,
     MyHttpRequestEmpComponent,
+    MyHttpApiMemComponent,
     MyModalFormComponent,
     MyReactiveFormComponent,
     MyStudentComponent,
@@ -60,7 +63,8 @@ import { PreloadingDemoComponent } from './preloading-demo/preloading-demo.compo
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [ConfigService,DataAPIService,studentService,loginService],
+
+  providers: [ConfigService,DataAPIService,studentService,loginService,MemAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -16,4 +16,8 @@ export class MyLearnComponent implements OnInit {
   changePageName(){
     this.pageName ='Test in compoent ts'
   }
+  pageName1='APP 22'
+  changePageName1(){
+    this.pageName="Test in component is"
+  }
 }
