@@ -30,6 +30,7 @@ import { loginService } from './services/login.service';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 import { LazyDemoComponent } from './lazy-demo/lazy-demo.component';
 import { PreloadingDemoComponent } from './preloading-demo/preloading-demo.component';
+import { MyRxJsComponent } from './my-rx-js/my-rx-js.component';
 import { RegisterComponent } from './register/register.component';
 
 
@@ -56,6 +57,7 @@ import { RegisterComponent } from './register/register.component';
     MyStudentComponent,
     MyLoginComponent,
     ReactiveValidationComponent,
+    MyRxJsComponent,
     RegisterComponent,
   ],
   imports: [
