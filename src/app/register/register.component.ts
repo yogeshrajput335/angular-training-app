@@ -14,6 +14,7 @@ export class RegisterComponent implements OnInit {
     this.registerForm=this.formBuilder.group({
       UserName:['',[Validators.required,Validators.minLength(6)]],
       Email:['',[Validators.required, Validators.email]],
+      Password:['',[Validators.required,Validators.minLength(6)]],
     })
   }
 get f(){return this.registerForm.controls;}
@@ -22,6 +23,10 @@ onSubmit(){
   if (this.registerForm.invalid) {
     return;
 }
+}
+onReset() {
+  
+  this.registerForm.reset();
 }
 
 }
