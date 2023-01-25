@@ -1,3 +1,4 @@
+import { MyRxJsComponent } from './my-rx-js/my-rx-js.component';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 import { MyModalFormComponent } from './my-modal-form/my-modal-form.component';
 import { MyHttpRequestEmpComponent } from './my-http-request-emp/my-http-request-emp.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path:'login',component:MyLoginComponent},
   { path:'student',component:MyStudentComponent},
   { path:'validation',component:ReactiveValidationComponent},
+  { path:'rx-js',component:MyRxJsComponent},
   {
     path: 'lazy-loading',
     loadChildren: () => import('./lazy-demo/lazy-loading.module')
