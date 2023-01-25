@@ -1,0 +1,15 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+<label class="form-label">UserName</label>
+<input type="text" formControlName="UserName" class="form-control"[ngClass]="{ 'is-invalid':submitted && f.UserName.errors}"/>
+<div *ngIf="submitted" && f.UserName.errors class="invalid-feedback"></div>
+<div *ngIf="f.UserName.errors.required">UserName is required</div> 
+<div *ngIf="f.UserName.errors.minLength">Password must be atleast 6character</div>
+<div>
+    <label class="form-label">Email</label>
+    <input type="text" formControlName="email" class="form-control" [ngClass]="{'is-invalid':submitted &&f.email.errors}"/>
+    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+    <div *ngIf="f.email.errors.required">Email is required</div>
+    <div *ngIf="f.email.errors.email">Email must be valid email address</div>
+    </div>
+</div>
+    
