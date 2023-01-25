@@ -14,6 +14,7 @@ import { MyStudentComponent } from './my-student/my-student.component';
 import { MyLoginComponent } from './my-login/my-login.component';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 import { AppCustomPreloader } from './common/custome-preloader';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path:'login',component:MyLoginComponent},
   { path:'student',component:MyStudentComponent},
   { path:'validation',component:ReactiveValidationComponent},
+  { path:'register',component:RegisterComponent},
   {
     path: 'lazy-loading',
     loadChildren: () => import('./lazy-demo/lazy-loading.module')

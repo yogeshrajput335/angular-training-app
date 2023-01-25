@@ -30,6 +30,7 @@ import { loginService } from './services/login.service';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 import { LazyDemoComponent } from './lazy-demo/lazy-demo.component';
 import { PreloadingDemoComponent } from './preloading-demo/preloading-demo.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { PreloadingDemoComponent } from './preloading-demo/preloading-demo.compo
     MyStudentComponent,
     MyLoginComponent,
     ReactiveValidationComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
