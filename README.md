@@ -26,3 +26,6 @@
 
 # Observables Promise
 * https://www.syncfusion.com/blogs/post/angular-promises-versus-observables.aspx#:~:text=Promises%20deal%20with%20one%20asynchronous,over%20a%20period%20of%20time.&text=Emit%20multiple%20values%20over%20a,using%20the%20subscribe()%20method.
+
+# Build
+* ng build --configuration production
