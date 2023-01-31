@@ -1,4 +1,4 @@
-<!-- {{pagedata|json}} -->
+<!-- {{$pageData1|async|json}} -->
 
 <table>
   <tr>
@@ -8,7 +8,7 @@
     <td>Birthday</td>
     <td>Gender</td>
   </tr>
-  <tr *ngFor="let e of pagedata.data">
+  <tr *ngFor="let e of ($pageData1|async)['data']">
     <td>{{e.firstname+ ' ' +e.lastname}}</td>
     <td>{{e.email}}</td>
     <td>{{e.phone}}</td>
@@ -22,7 +22,7 @@
     <td>id</td>
     <td>title</td>
     <td>completed</td>
-    
+
   </tr>
   <tr *ngFor="let e of pagedata2">
     <td>{{e.userId}}</td>

@@ -9,21 +9,24 @@ import { ConfigService, DataAPIService } from '../services/config.service';
 export class MyHttpRequestEmpComponent implements OnInit {
   pagedata:any;
   pagedata2:any;
+  $pageData1
   constructor(private cs: ConfigService, private gs:DataAPIService) { }
 
   ngOnInit(): void {
-    this.cs.getData().subscribe((data:any)=>{
-      
-      this.pagedata = data;
-    })
-    
-    this.gs.getDataAPI().subscribe((data:any)=>{
-      this.pagedata2 = data;
-    })
+
+    // this.cs.getData().subscribe((data:any)=>{
+
+    //   this.pagedata = data;
+    // })
+
+    // this.gs.getDataAPI().subscribe((data:any)=>{
+    //   this.pagedata2 = data;
+    // })
+    this.$pageData1 = this.cs.getData();
   }
-  
-      
-    
+
+
+
   }
 
 
