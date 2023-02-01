@@ -34,6 +34,7 @@ import { MyRxJsComponent } from './my-rx-js/my-rx-js.component';
 import { RegisterComponent } from './register/register.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { SubjectDemoComponent } from './subject-demo/subject-demo.component';
+import { MyViewchildComponent } from './my-viewchild/my-viewchild.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { SubjectDemoComponent } from './subject-demo/subject-demo.component';
     RegisterComponent,
     SubscriptionComponent,
     SubjectDemoComponent,
+    MyViewchildComponent,
   ],
   imports: [
     BrowserModule,

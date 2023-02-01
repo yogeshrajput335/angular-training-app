@@ -1,3 +1,4 @@
+import { MyViewchildComponent } from './my-viewchild/my-viewchild.component';
 import { SubjectDemoComponent } from './subject-demo/subject-demo.component';
 import { MyRxJsComponent } from './my-rx-js/my-rx-js.component';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path:'register',component:RegisterComponent},
   { path:'subscription',component:SubscriptionComponent},
   { path:'subject-demo',component:SubjectDemoComponent},
+  { path:'view-child',component:MyViewchildComponent},
   {
     path: 'lazy-loading',
     loadChildren: () => import('./lazy-demo/lazy-loading.module')
