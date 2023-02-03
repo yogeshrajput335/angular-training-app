@@ -36,6 +36,11 @@ import { SubscriptionComponent } from './subscription/subscription.component';
 import { SubjectDemoComponent } from './subject-demo/subject-demo.component';
 import { MyViewchildComponent } from './my-viewchild/my-viewchild.component';
 import { NgrxDemoComponent } from './ngrx-demo/ngrx-demo.component';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
+import { EffectsModule } from '@ngrx/effects';
+import { Reducers } from './common/ngrx/red.reducer';
 
 
 @NgModule({
@@ -73,7 +78,12 @@ import { NgrxDemoComponent } from './ngrx-demo/ngrx-demo.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // StoreModule.forRoot({
+    //   users : Reducers
+    // }),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    EffectsModule.forRoot([])
   ],
 
   providers: [ConfigService,DataAPIService,studentService,loginService,MemAPIService],
