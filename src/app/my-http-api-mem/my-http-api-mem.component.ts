@@ -12,10 +12,10 @@ pagedata:any
   constructor(private api:MemAPIService) { }
 
   ngOnInit(): void {
-this.api.getMemAPI().subscribe((data:any)=>{
-this.pagedata=data;
-})
-}
+    this.api.getMemAPI().subscribe((data:any)=>{
+      this.pagedata=data;
+    })
+  }
   }
 
 
